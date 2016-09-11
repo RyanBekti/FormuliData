@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                                          String name = etNama.getText().toString();
                                          String from = etAsal.getText().toString();
                                          TvHasil.setText("Nama : " + name);
-                                         TvAsal.setText("Dari : " + from);
+                                         TvAsal.setText("Berumur : " + from);
                                      }
                                  }
         );
@@ -102,9 +102,10 @@ public class MainActivity extends AppCompatActivity {
     private void doProcess() {
         if (isValid()) {
             String nama = etNama.getText().toString();
-            String asal = etAsal.getText().toString();
+            int tahun = Integer.parseInt(etAsal.getText().toString());
+            int usia = 2016 - tahun;
             TvHasil.setText("Nama : " + nama);
-            TvAsal.setText("Dari : " + asal);
+            TvAsal.setText("Berusia " + usia + " tahun ");
         }
     }
 
