@@ -147,10 +147,10 @@
             android:id="@+id/spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
             android:layout_alignParentleft="@+id/buttonSend"
+            android:layout_alignStart="@+id/imageView2"
             android:layout_below="@+id/checkBoxVoli"
-            android:layout_toLeftOf="@+id/buttonSend"
-            android:layout_toStartOf="@+id/buttonSend"
             android:background="#9bafc9"
             android:entries="@array/Angkatan"
             android:spinnerMode="dropdown" />
